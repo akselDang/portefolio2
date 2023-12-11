@@ -1,0 +1,130 @@
+#contact {
+    background-color: #555;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+/* Styles de la section de contact */
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2185d0;
+}
+
+/* Styles des liens */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* Effet de survol sur les liens */
+header a::before,
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+header a,
+nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+header a:hover::before,
+nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Styles spécifiques pour les écrans plus petits (tablettes et mobiles) */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header a {
+        padding: 10px;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}

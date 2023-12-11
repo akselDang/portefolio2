@@ -1,0 +1,141 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+#accueil {
+  background-color: #555;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #555;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.scroll-text {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#presentation,
+#a-propos-de-moi {
+  background-color: #f8f9fa;
+}
+
+h2 {
+  color: #343a40;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #007bff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Effet de survol sur les liens */
+header a,
+nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+header a::before,
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+header a:hover::before,
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#bienvenue{
+  background-color: #343a40;
+  font-size: 37px;
+  text-align: center;
+  color: #8e8e8e;
+  padding: 3px;
+}
+/* Styles spécifiques pour les écrans plus petits (tablettes et mobiles) */
+@media only screen and (max-width: 768px) {
+  header {
+      padding: 10px 0;
+  }
+
+  header a {
+      padding: 10px;
+  }
+
+  .container {
+      max-width: 100%;
+  }
+
+  #bienvenue {
+      padding: 30px 0;
+  }
+
+  #bienvenue h1 {
+      font-size: 28px;
+  }
+}

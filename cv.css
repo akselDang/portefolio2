@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #343a40;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+
+
+
+  
+  /* Effet de survol sur les liens */
+  header a, nav a {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header a::before, nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+  
+  header a:hover::before, nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+ 
+
+  section:hover {
+    transform: scale(1.02); /* Zoom légèrement au survol */
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+}
+#langages-informatiques li:hover {
+    transform: scale(1.1); /* Zoom légèrement au survol */
+    transition: transform 0.3s ease-in-out; /* Animation fluide */
+}
+#langues-parlees .flag-icon {
+    transition: transform 0.3s ease-in-out; /* Animation de rotation fluide */
+}
+
+#langues-parlees .flag-icon:hover {
+    transform: rotate(360deg); /* Rotation complète au survol */
+}
+
+/* ... Styles existants ... */
+
+/* ... Styles existants ... */
+
+#langages-informatiques li {
+    position: relative;
+    margin-bottom: 20px; /* Augmentation de la marge pour plus d'espace */
+}
+
+/* Augmentation de la taille des logos */
+#competences li i {
+    font-size: 35px; /* Ajustez la taille selon vos besoins */
+}
+
+.progress-circle {
+    width: 40px; /* Ajustez la taille du cercle selon vos besoins */
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1; /* Couleur du fond du cercle */
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.progress-circle::after {
+    content: attr(data-progress) '%'; /* Affiche le pourcentage */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+}
+#langues-parlees ul li {
+    margin-bottom: 10px; /* Ajoute de l'espace en bas de chaque élément de la liste */
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    margin-right: 10px; /* Ajoute de l'espace à droite de chaque drapeau */
+}

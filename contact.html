@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portefolio - Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="veille.html">Veille technologique</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a id="contact" href="contact.html">Contactez-moi</a></li>
+        </ul>
+    </header>
+
+    <section id="contact-section">
+        <h1>Contactez-moi</h1>
+        <form onsubmit="showAlert(event)">
+            <label for="objet">Objet :</label>
+            <input type="text" id="objet" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <p>Vous pouvez également me contacter sur LinkedIn : <a href="https://www.linkedin.com/in/axel-belloir-9a101319a/" target="_blank">Mon LinkedIn</a></p>
+    </section>
+
+    <script>
+        function showAlert(event) {
+            // Empêcher le formulaire de se soumettre normalement
+            event.preventDefault();
+            
+            // Afficher l'alerte
+            alert("Le message a été envoyé!");
+        }
+    </script>
+</body>
+</html>

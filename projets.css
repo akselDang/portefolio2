@@ -1,0 +1,169 @@
+#projets{
+    background-color: #555;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+h1{
+    text-align: center;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projets-section {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.projet {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.projet h2 {
+    color: #343a40;
+}
+
+.projet p {
+    margin-bottom: 10px;
+}
+
+.link, .details-btn {
+    color: #3498db;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #3498db;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.link:hover, .vignette a:hover, .details-btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.vignette, .details {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.projet:hover .vignette {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vignette .vignette-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vignette .text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.vignette img {
+    max-width: 15%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.vignette .vignette-content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.vignette .text-content {
+    margin-left: 20px;
+}
+
+.projet:hover .vignette .details {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.details{
+    display: none;
+}
+#projet2 img{
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+  /* Effet de survol sur les liens */
+  header a, nav a {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  header a::before, nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+  
+  header a:hover::before, nav a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  

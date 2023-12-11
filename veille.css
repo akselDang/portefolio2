@@ -1,0 +1,175 @@
+#veille{
+  background-color: #555;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  float: left;
+}
+
+header a {
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: #555;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ol {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #343a40; /* changé de noir à la couleur principale de la section */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #555;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #343a40;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 20px; /* Augmenté l'espacement entre les paragraphes */
+  line-height: 1.6;
+}
+
+/* Ajouté une bordure autour des sections pour les séparer visuellement */
+/* ... Vos styles existants ... */
+
+/* Styles pour la première section (intro) */
+/* ... Vos styles existants ... */
+
+/* Transition pour les liens dans le header */
+header a {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Animation pour le titre de la première section (intro) */
+#intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+/* Ajout d'une légère animation de survol sur les sections */
+section:not(#intro) {
+  transition: transform 0.3s ease-in-out;
+}
+
+section:not(#intro):hover {
+  transform: scale(1.05);
+}
+
+/* ... Autres styles ... */
+/* ... Vos styles existants ... */
+
+/* Styles pour la première section (intro) */
+#intro {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#intro h2 {
+  font-size: 36px; /* Taille de police plus grande */
+  margin-bottom: 20px;
+  color: #ff4500; /* Couleur de texte orange pour attirer l'attention */
+}
+
+#intro p {
+  font-size: 20px; /* Taille de police plus grande */
+  margin-bottom: 30px;
+}
+
+/* Ajout d'une légère animation de survol sur l'intro */
+#intro:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* ... Autres styles ... */
+header a, nav a {
+  position: relative;
+  overflow: hidden;
+}
+
+header a::before, nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+header a:hover::before, nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

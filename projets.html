@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefolio - Projets</title>
+    <link rel="stylesheet" href="projets.css">
+    <script src="projets.js"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="veille.html">Veille technologique</a></li>
+            <li><a id="projets" href="projets.html">Projets</a></li>
+            <li><a href="contact.html">Contacter moi</a></li>
+        </ul>
+    </header>
+    <section class="projets-section">
+        <h1>Mes Projets</h1>
+
+        <article class="projet" id="projet1">
+           
+            <div class="vignette">
+                <h2>Projet 1 : Mini Game</h2>
+                <div class="vignette-content">
+                    <div class="text-content">
+                        <p>Conception et développement d'un mini-jeu vidéo terminal en Python, intégrant un personnage, des objets, des niveaux générés aléatoirement, et des fonctionnalités avancées telles que la destruction de murs. Cette réalisation constitue une démonstration concrète de compétences en programmation de jeux, illustrant une maîtrise des concepts de manipulation de données et d'interaction utilisateur.
+                        </p>
+                        <p>Langage utilisé : Python</p>
+                        <a href="jeuxPython.zip" download="jeuxPython.zip">Télécharger le projet</a>
+
+                        <button class="details-btn" onclick="toggleDetails('projet1')">&#9660;Détails</button>
+                    </div>
+                    <img src="python2.png" alt="Projet 1">
+                </div>
+            </div>
+            <div class="details" id="details-projet1" >
+                <p><strong>Résumé :</strong></p>
+                        <p>Ce projet, réalisé dans le cadre du TD MIASHS Informatique S3, vise à concevoir un mini-jeu vidéo jouable dans un terminal en utilisant le langage de programmation Python. Les principales fonctionnalités du jeu comprennent la création et l'affichage d'une carte, la représentation d'un personnage, la possibilité de déplacement, la génération aléatoire de niveaux, la collecte d'objets, et d'autres améliorations.</p>
+                        <p><strong>Fonctionnalités clés :</strong></p>
+                        <ul>
+                            <li>Affichage de base : Une fonction display_map qui affiche une carte représentée par une matrice et un dictionnaire associant des caractères aux nombres.</li>
+                            <li>Personnage : Une fonction create_perso qui crée un personnage avec des propriétés telles que le caractère représentatif, la position en abscisse et en ordonnée.</li>
+                            <li>Affichage du personnage sur la carte : La création d'une fonction display_map_and_char qui affiche à la fois la carte et le personnage.</li>
+                            <li>Déplacement du personnage : Utilisation de la fonction input pour permettre au joueur de déplacer le personnage dans les directions haut, bas, gauche et droite.</li>
+                            <li>Boucle de jeu infinie : Intégration d'une boucle while True pour permettre au joueur de déplacer le personnage de manière répétée.</li>
+                            <li>Limitation des déplacements : Empêcher le personnage de sortir de la carte en modifiant la fonction de mise à jour du personnage.</li>
+                            <li>Murs infranchissables : Rendre les murs sur la carte infranchissables pour ajouter un défi au jeu.</li>
+                            <li>Contrôles améliorés avec curses : Utilisation de la bibliothèque curses pour des contrôles plus confortables, y compris la suppression de l'écran et le rafraîchissement.</li>
+                            <li>Objets à collecter : Ajout d'objets représentés par des "." avec une fonction de génération aléatoire et affichage distinct.</li>
+                            <li>Ramassage automatique des objets : Implémentation de la fonctionnalité de ramassage automatique des objets lorsque le personnage marche dessus.</li>
+                            <li>Affichage du score : Ajout et affichage d'un score qui augmente à chaque objet collecté.</li>
+                            <li>Génération aléatoire de cartes : Création d'une fonction generate_random_map pour générer des cartes aléatoires avec des entrées et sorties.</li>
+                            <li>Nouveaux niveaux : Intégration d'une fonction create_new_level pour changer de niveau lorsque le personnage atteint la sortie.</li>
+                            <li>Ajout de bombes : Possibilité pour le joueur de faire exploser les murs autour du personnage avec la touche E.</li>
+                            <li>Fonctionnalités optionnelles : Le projet propose également des idées d'améliorations facultatives pour ceux qui souhaitent approfondir leurs compétences en programmation de jeux.</li>
+                        </ul>
+                        <p><strong>Conclusion :</strong></p>
+                        <p>Ce projet démontre les compétences en programmation de jeux en utilisant Python, avec des fonctionnalités de base et des améliorations optionnelles pour rendre le jeu plus intéressant et interactif.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+        
+        
+
+        <article class="projet" id="projet2">
+            <h2>Projet 2 : Extraction et d'analyse de données</h2>
+            <div class="vignette">
+                <div class="vignette-content">
+                <div class="text-content">
+                <p>
+                    Projet Java d'extraction et d'analyse de données NBA 2003 depuis <a href="https://www.basketball-reference.com/draft/NBA_2003.html">basketball-reference</a>. Scraping des classements et des joueurs avec ItemsScrapper. Analyse des performances avec ItemAnalyzer. Objectif : Analyse statistique des joueurs sélectionnés lors du repêchage NBA 2003.
+                </p>
+                <p>Langage utilisé : java et HTML</p>
+                <a href="analyzerJava.zip" download="analyzerJava.zip">Télécharger le projet</a>
+                <button class="details-btn" onclick="toggleDetails('projet2')">&#9660; Détails</button>
+            </div>
+            <img src="nba.png" alt="Projet 2">
+            </div>
+            </div>
+            <div class="details" id="details-projet2">
+                <p>
+                    <strong>Description :</strong> Ce projet Java se concentre sur l'extraction de données statistiques à partir d'une page Web dédiée aux résultats du repêchage NBA de l'année 2003 (https://www.basketball-reference.com/draft/NBA_2003.html) dans le cadre d'un projet à réaliser pour le cours de programmation orienté objet de la licence MIASHS. L'objectif principal est de récupérer des informations cruciales sur les joueurs sélectionnés lors de ce repêchage pour une analyse ultérieure.
+                </p>
+                <p>
+                    <strong>Composants principaux :</strong>
+                </p>
+                <ol>
+                    <li>
+                        <strong>ItemsScrapper :</strong>
+                        <ul>
+                            <li><strong>Fonctionnalité :</strong> Extrayant les données brutes de la page HTML, cet composant analyse le code source et capture des informations clés telles que le classement, le nom du joueur et le nombre d'années jouées.</li>
+                            <li><strong>Techniques :</strong> Utilisation de méthodes indexOf et substring pour localiser et extraire les données.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>ItemAnalyzer :</strong>
+                        <ul>
+                            <li><strong>Fonctionnalités :</strong> Recevant les données extraites du scrapping, cette classe offre des méthodes pour analyser les statistiques, telles que le nombre de matchs, le total d'assists, le total de points, la moyenne de points, la moyenne d'assists, la moyenne de rebonds, etc.</li>
+                            <li><strong>Techniques :</strong> Utilisation de méthodes simples pour calculer les statistiques demandées.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <p>
+                    <strong>Objectifs accomplis :</strong>
+                </p>
+                <ul>
+                    <li>Scrapping réussi des informations de base du repêchage NBA 2003.</li>
+                    <li>Mise en place d'une structure de classe propre pour la manipulation des données.</li>
+                    <li>Développement des méthodes de base pour l'analyse des statistiques.</li>
+                </ul>
+                <p>
+                    <strong>Objectifs futurs :</strong>
+                </p>
+                <ul>
+                    <li>Implémentation complète des méthodes d'analyse statistique.</li>
+                    <li>Intégration de visualisations pour une compréhension plus intuitive des données.</li>
+                    <li>Extension du projet pour inclure des fonctionnalités de scraping sur d'autres pages Web.</li>
+                </ul>
+                <p>
+                    <strong>Technologies utilisées :</strong>
+                </p>
+                <ul>
+                    <li>Java pour le développement du scrapping et de l'analyse.</li>
+                    <li>Utilisation de méthodes de manipulation de chaînes pour extraire les données.</li>
+                    <li>Potentiellement, intégration de bibliothèques pour des fonctionnalités avancées.</li>
+                </ul>
+                <p>
+                    <strong>Contributions personnelles :</strong>
+                </p>
+                <ul>
+                    
+                    <li>Implémentation du scrapping de base avec la classe ItemsScrapper.</li>
+                    <li>Définition des méthodes d'analyse de base dans la classe ItemAnalyzer.</li>
+                </ul>
+                <p>
+                    Ce projet reflète ma compétence dans la manipulation de données en Java et démontre ma capacité à concevoir des solutions pour extraire des informations utiles à partir de sources complexes, contribuant ainsi à mon expertise en développement logiciel orienté objet.
+                </p>
+            </div>
+        </article>
+        
+
+        <!-- Ajoutez plus d'articles pour représenter d'autres projets -->
+    </section>
+</body>
+</html>
